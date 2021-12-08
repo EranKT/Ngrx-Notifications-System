@@ -1,0 +1,20 @@
+<div class="notifications-content">
+    <div class="user-notifications-container">
+
+        <div *ngFor="let notification of notifications$ | async"
+             [ngClass]="getNotificationsClass(notification.new)"
+             (click)="messageRead(notification.id)">
+
+            <span>Id: {{ notification.id }}</span>
+
+            <span>Summary: {{ notification.summary }}</span>
+
+            <span>New: {{ notification.new }}</span>
+
+        </div>
+
+    </div>
+
+    <button (click)="stopRefresh()">Stop Refreshing</button>
+
+</div>
