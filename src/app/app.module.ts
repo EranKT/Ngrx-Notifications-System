@@ -5,7 +5,6 @@ import { StoreModule } from '@ngrx/store';
 import { StoreDevtools, StoreDevtoolsModule } from '@ngrx/store-devtools';
 
 import { AppComponent } from './app.component';
-import { UserNotificationsComponent } from './user-notifications/user-notifications.component';
 import { UserNotificationsModule } from './user-notifications/user-notifications.module';
 
 @NgModule({
